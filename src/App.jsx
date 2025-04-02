@@ -17,7 +17,7 @@ const App = () => {
             // Fetch current weather data
             const weatherResponse = await fetch(
               `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=3537a05f6f1c693800dd1823a6855d56&units=metric`
-            );
+            );//NOTE: PLEASE USE YOUR OWN API KEY, THIS IS A DUMMY API KEY
 
             if (!weatherResponse.ok) {
               throw new Error("Failed to fetch current weather data");
